@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:task_two/model/ingredaint.dart';
 
 import 'package:task_two/model/recipe.dart';
-import 'package:task_two/model/recipe_card.dart';
 
 class RecioeDetailScreen extends StatelessWidget {
   final Recipe recipe;
@@ -18,7 +17,7 @@ class RecioeDetailScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('main dishes'),
+        title: const Text('main dishes'),
       ),
       body: ListView.builder(
         itemCount: recipe.ingridents.length,
